@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{
+            color: red;
+            animation-name: bounce;
+            animation-duration: 0.5s;
+            animation-iteration-count: 20;
+        }
+
+        @keyframes bounce{
+            0%{transform:translateY(0px) ;}
+            50%{transform:translateY(20px) ;}
+            100%{transform:translateY(0px) ;}
+        }
+        .new-collection{
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            /* align-content: center; */
+        }
+         .new-collection::before{
+            content: " ";
+            width: 4px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            transform: translateX(-15px);
+         }
+          .new-collection::before{
+            transform: translateX(-15px);
+          }
+    </style>
+</head>
+<body>
+   <h1>color changing animation</h1> 
+   <div class="color-changing-animation"></div>
+   <br><br>
+   <!-- <h1></h1> -->
+    <h1 class="logo">Attire</h1>
+    <div class="new-collection">New collection</div>
+
+</body>
+</html>
